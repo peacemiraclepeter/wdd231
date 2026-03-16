@@ -1,7 +1,7 @@
-/* WDD 231 - Small Screen Styles (Mobile First) */
 :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
+        --primary-color: #2c3e50;
+    --secondary-color: #2980b9;
+    --secondary-light: #3498db;
     --accent-color: #e74c3c;
     --success-color: #27ae60;
     --bg-color: #f4f4f4;
@@ -11,12 +11,72 @@
     --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+nav {
+    margin-top: 1rem;
+}
+
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 1rem;
+}
+
+.nav-menu.active {
+    display: flex;
+}
+
+.nav-menu a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: white;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background-color: var(--secondary-color);
+    transform: translateX(5px);
+}
+
+
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.filter-btn {
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--secondary-color);
+    background-color: white;
+    color: var(--secondary-color);
+
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.filter-btn.active {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+
+
 body {
     background-color: var(--bg-color);
     min-width: 320px;
 }
 
-/* Header Styles */
 header {
     background-color: var(--primary-color);
     color: white;
@@ -103,6 +163,7 @@ nav {
     border-radius: 4px;
     transition: all 0.3s ease;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .nav-menu a:hover,
@@ -186,6 +247,7 @@ section {
     border-radius: 4px;
     font-weight: 600;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .filter-btn:hover {
@@ -201,6 +263,7 @@ section {
 .courses-container {
     display: grid;
     gap: 1rem;
+    grid-template-columns: 1fr;
 }
 
 .course-card {
