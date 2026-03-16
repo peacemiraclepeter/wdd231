@@ -8,27 +8,12 @@
     --card-bg: #ffffff;
     --text-color: #333333;
     --border-color: #dddddd;
-}
-
-/* Reset and Base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
     background-color: var(--bg-color);
     min-width: 320px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
 }
 
 /* Header Styles */
@@ -37,7 +22,7 @@ header {
     color: white;
     padding: 1rem;
     position: relative;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow);
 }
 
 .logo-container {
@@ -105,7 +90,6 @@ nav {
     flex-direction: column;
     gap: 0.5rem;
     padding-top: 1rem;
-    list-style: none;
 }
 
 .nav-menu.active {
@@ -119,7 +103,6 @@ nav {
     border-radius: 4px;
     transition: all 0.3s ease;
     font-weight: 600;
-    text-decoration: none;
 }
 
 .nav-menu a:hover,
@@ -151,8 +134,8 @@ h2 {
     font-size: 1.5rem;
 }
 
-/* Content Wrapper - Using Flexbox */
-.content-wrapper {
+/* Content Grid */
+.content-grid {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -163,7 +146,7 @@ section {
     background-color: var(--card-bg);
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow);
 }
 
 /* About Section */
@@ -176,9 +159,6 @@ section {
 /* Photo Section */
 .photo-container {
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .photo-container img {
@@ -186,7 +166,8 @@ section {
     max-width: 300px;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    box-shadow: var(--shadow);
 }
 
 /* Courses Section */
@@ -205,8 +186,6 @@ section {
     border-radius: 4px;
     font-weight: 600;
     transition: all 0.3s ease;
-    cursor: pointer;
-    font-family: inherit;
 }
 
 .filter-btn:hover {
@@ -219,10 +198,8 @@ section {
     color: white;
 }
 
-/* Courses Container - Using Flexbox */
 .courses-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 1rem;
 }
 
@@ -284,7 +261,6 @@ footer {
     margin-top: 3rem;
 }
 
-/* Social Links - Using Flexbox */
 .social-links {
     display: flex;
     justify-content: center;
@@ -294,7 +270,6 @@ footer {
 
 .social-links a {
     transition: transform 0.3s ease;
-    display: flex;
 }
 
 .social-links a:hover {
@@ -318,14 +293,27 @@ footer {
     margin-top: 0.5rem;
 }
 
-/* Focus styles for accessibility */
+/* Accessibility */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Focus styles */
 a:focus,
 button:focus {
     outline: 3px solid var(--accent-color);
     outline-offset: 2px;
 }
 
-/* Reduced motion preference */
+/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
     * {
         animation-duration: 0.01ms !important;
