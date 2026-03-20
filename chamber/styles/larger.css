@@ -72,3 +72,91 @@
         height: 150px;
     }
 }
+
+
+
+
+/* ============================================
+   WDD 231 Week 03 - Home Page Media Queries
+   ============================================ */
+
+@media screen and (min-width: 640px) {
+
+    /* Hero adjustments */
+    .hero {
+        height: 500px;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.25rem;
+    }
+
+    /* Events side by side */
+    .events-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .event-card {
+        flex: 1 1 calc(50% - 1rem);
+        min-width: 300px;
+    }
+
+    /* Weather layout */
+    .weather-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .current-weather {
+        flex: 1;
+    }
+
+    .forecast {
+        flex: 1;
+        border-top: none;
+        border-left: 2px solid var(--border-color, #d5dbdb);
+        padding-top: 0;
+        padding-left: 2rem;
+    }
+
+    /* Spotlights grid */
+    .spotlights-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero {
+        height: 600px;
+    }
+
+    .hero-content h2 {
+        font-size: 3rem;
+    }
+
+    /* Three columns for events */
+    .event-card {
+        flex: 1 1 calc(33.333% - 1rem);
+    }
+
+    /* Three spotlights */
+    .spotlights-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Larger forecast */
+    .forecast-days {
+        flex-direction: row;
+    }
+
+    .forecast-day {
+        flex: 1;
+        flex-direction: column;
+        text-align: center;
+    }
+}
