@@ -57,7 +57,7 @@ function createMemberCard(member) {
     }
 
     card.innerHTML = `
-        <img src="images/technology1.jpg"
+        <img src="${member.image}" 
              alt="${member.name} logo" 
              class="member-image"
              loading="lazy"
