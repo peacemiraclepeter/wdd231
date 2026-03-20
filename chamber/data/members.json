@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Tech Solutions Inc.",
+            "address": "456 Innovation Drive, Tech Park",
+            "phone": "(555) 234-5678",
+            "website": "https://techsolutions.com",
+            "image": "images\\technology1.jpg",
+            "membershipLevel": 3,
+            "description": "Leading provider of IT consulting and software development services."
+        },
+        {
+            "name": "Sunrise Café & Bakery",
+            "address": "789 Main Street, Downtown",
+            "phone": "(555) 345-6789",
+            "website": "https://sunrisecafe.com",
+            "image": "images\\sunrise-cafe.jpg",
+            "membershipLevel": 2,
+            "description": "Family-owned café serving fresh pastries, coffee, and breakfast all day."
+        },
+        {
+            "name": "Green Valley Landscaping",
+            "address": "321 Oak Avenue, Westside",
+            "phone": "(555) 456-7890",
+            "website": "https://greenvalleylandscaping.com",
+            "image": "green-valley.jpg",
+            "membershipLevel": 1,
+            "description": "Professional landscaping and lawn care services for residential and commercial properties."
+        },
+        {
+            "name": "Heritage Financial Group",
+            "address": "555 Commerce Blvd, Suite 100",
+            "phone": "(555) 567-8901",
+            "website": "https://heritagefinancial.com",
+            "image": "heritage-financial.jpg",
+            "membershipLevel": 3,
+            "description": "Full-service financial planning, investment management, and retirement solutions."
+        },
+        {
+            "name": "Artisan Crafts Collective",
+            "address": "147 Artisan Way, Arts District",
+            "phone": "(555) 678-9012",
+            "website": "https://artisancrafts.com",
+            "image": "artisan-crafts.jpg",
+            "membershipLevel": 2,
+            "description": "Local handmade goods, art supplies, and craft workshops for all skill levels."
+        },
+        {
+            "name": "Elite Fitness Center",
+            "address": "888 Health Street, Northside",
+            "phone": "(555) 789-0123",
+            "website": "https://elitefitness.com",
+            "image": "elite-fitness.jpg",
+            "membershipLevel": 2,
+            "description": "State-of-the-art gym facilities, personal training, and group fitness classes."
+        },
+        {
+            "name": "River City Plumbing",
+            "address": "159 River Road, Industrial Park",
+            "phone": "(555) 890-1234",
+            "website": "https://rivercityplumbing.com",
+            "image": "river-city-plumbing.jpg",
+            "membershipLevel": 1,
+            "description": "24/7 emergency plumbing services, repairs, and installations for homes and businesses."
+        }
+    ]
+}

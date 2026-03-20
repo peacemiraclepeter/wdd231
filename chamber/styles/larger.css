@@ -1,0 +1,74 @@
+/* WDD 231 - Chamber Directory - Larger Screen Styles */
+@media screen and (min-width: 640px) {
+
+    /* Header Layout */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    nav {
+        margin-top: 0;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        padding-top: 0;
+    }
+
+    .nav-menu a {
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-menu a:hover,
+    .nav-menu a.active {
+        transform: none;
+        background-color: var(--secondary-color);
+        border-radius: 4px;
+    }
+
+    /* Grid Layout for Members */
+    .members-container.grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Footer Layout */
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        padding: 3rem;
+    }
+
+    .page-header h2 {
+        font-size: 2.5rem;
+    }
+
+    /* 3 Column Grid */
+    .members-container.grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* List view adjustments for large screens */
+    .members-container.list .member-card {
+        padding: 1.5rem;
+    }
+
+    .members-container.list .member-image {
+        width: 150px;
+        height: 150px;
+    }
+}
