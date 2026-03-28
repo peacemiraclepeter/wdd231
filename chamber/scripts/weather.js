@@ -43,11 +43,12 @@ function displayCurrentWeather(data) {
     const temp = Math.round(data.main.temp);
     const description = data.weather[0].description;
     const iconCode = data.weather[0].icon;
-ujyqa
+
     currentTemp.textContent = temp;
     weatherDesc.textContent = description;
     weatherIcon.src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
     weatherIcon.alt = description;
+}
 }
 
 // Display 3-day forecast
