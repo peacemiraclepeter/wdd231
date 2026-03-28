@@ -115,32 +115,40 @@
             </div>
         </section>
 
-        <!-- WEATHER SECTION -->
-        <section class="weather-section">
-            <h2>Local Weather</h2>
-            <div class="weather-container">
-                <div class="current-weather">
-                    <div class="weather-main">
-                        <img src="images/cloud-sun-2-svgrepo-com.svg" alt="Weather icon" width="80" height="80">
-                        <div class="temperature">
-                            <span id="current-temp">--</span>°F
-                        </div>
-                    </div>
-                    <div class="weather-description">
-                        <p id="weather-desc">Loading...</p>
-                        <p class="location">Port Harcourt, Rivers State</p>
+    <section class="weather-section">
+        <h2>Local Weather</h2>
+    
+        <div class="weather-container">
+    
+            <div class="current-weather">
+    
+                <div class="weather-main">
+                    <img id="weather-icon" src="" alt="Current weather icon" width="80" height="80">
+    
+                    <div class="temperature">
+                        <span id="current-temp">--</span>°C
                     </div>
                 </div>
-
-                <div class="forecast">
-                    <h3>3-Day Forecast</h3>
-                    <div id="forecast-container" class="forecast-days">
-                        <!-- Forecast populated by JavaScript -->
-                        <div class="forecast-day loading">Loading...</div>
-                    </div>
+    
+                <div class="weather-description">
+                    <p id="weather-desc">Loading weather...</p>
+                    <p class="location">Port Harcourt, Rivers State</p>
+                </div>
+    
+            </div>
+    
+            <div class="forecast">
+                <h3>3 Day Forecast</h3>
+    
+                <div id="forecast-container" class="forecast-days">
+    
+                    <div class="forecast-day">Loading...</div>
+    
                 </div>
             </div>
-        </section>
+    
+        </div>
+    </section>
 
         <!-- MEMBER SPOTLIGHTS SECTION -->
         <section class="spotlights-section">
