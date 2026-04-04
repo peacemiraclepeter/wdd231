@@ -755,3 +755,42 @@ button:focus {
     text-align: center;
     padding: 1rem;
 }
+
+/* ============================================
+   WDD 231 Week 03 - Color Contrast Fixes
+   ============================================ */
+
+/* FIX 1: Hero Content - Ensure text is readable over the gradient */
+.hero-content {
+    /* The gradient background already provides good contrast,
+       but we ensure the text color is white with text shadow for readability */
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content h2 {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* FIX 2: CTA Button - Darker red for better contrast (4.5:1+) */
+.cta-button {
+    background-color: #c0392b;
+    /* Darker red instead of #e74c3c */
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    /* White border for additional contrast */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+}
+
+.cta-button:hover {
+    background-color: #a93226;
+    /* Even darker on hover */
+    color: #ffffff;
+}

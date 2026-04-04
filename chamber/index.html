@@ -48,9 +48,9 @@
         </button>
         <nav>
             <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
@@ -86,7 +86,6 @@
                         <p>Join us for networking with local business leaders. Coffee and pastries provided.</p>
                     </div>
                 </article>
-
                 <article class="event-card">
                     <div class="event-date">
                         <span class="month">APR</span>
@@ -99,7 +98,6 @@
                         <p>Learn digital marketing strategies for small businesses. Free for members.</p>
                     </div>
                 </article>
-
                 <article class="event-card">
                     <div class="event-date">
                         <span class="month">APR</span>
@@ -115,40 +113,31 @@
             </div>
         </section>
 
-    <section class="weather-section">
-        <h2>Local Weather</h2>
-    
-        <div class="weather-container">
-    
-            <div class="current-weather">
-    
-                <div class="weather-main">
-                    <img id="weather-icon" src="" alt="Current weather icon" width="80" height="80">
-    
-                    <div class="temperature">
-                        <span id="current-temp">--</span>°C
+        <section class="weather-section">
+            <h2>Local Weather</h2>
+            <div class="weather-container">
+                <div class="current-weather">
+                    <div class="weather-main">
+                        <!-- FIXED: Added placeholder src instead of empty -->
+                        <img id="weather-icon" src="images/placeholder.jpg" alt="Current weather icon" width="80"
+                            height="80">
+                        <div class="temperature">
+                            <span id="current-temp">--</span>°C
+                        </div>
+                    </div>
+                    <div class="weather-description">
+                        <p id="weather-desc">Loading weather...</p>
+                        <p class="location">Port Harcourt, Rivers State</p>
                     </div>
                 </div>
-    
-                <div class="weather-description">
-                    <p id="weather-desc">Loading weather...</p>
-                    <p class="location">Port Harcourt, Rivers State</p>
-                </div>
-    
-            </div>
-    
-            <div class="forecast">
-                <h3>3 Day Forecast</h3>
-    
-                <div id="forecast-container" class="forecast-days">
-    
-                    <div class="forecast-day">Loading...</div>
-    
+                <div class="forecast">
+                    <h3>3 Day Forecast</h3>
+                    <div id="forecast-container" class="forecast-days">
+                        <div class="forecast-day">Loading...</div>
+                    </div>
                 </div>
             </div>
-    
-        </div>
-    </section>
+        </section>
 
         <!-- MEMBER SPOTLIGHTS SECTION -->
         <section class="spotlights-section">
@@ -161,14 +150,14 @@
         </section>
     </main>
 
-     <footer>
+    <footer>
         <div class="footer-content">
             <div class="contact-info">
                 <h3>Contact Us</h3>
                 <p>Port Harcourt Chamber of Commerce</p>
-                <p> 04 Chief John Amadi Street</p>
+                <p>04 Chief John Amadi Street</p>
                 <p>Port Harcourt, Rivers State 500201</p>
-                <p>Phone: (+234) 810 049 1304 </p>
+                <p>Phone: (+234) 810 049 1304</p>
                 <p>Email: petermiraclepeace@gmail.com</p>
             </div>
             <div class="social-links">
@@ -179,12 +168,13 @@
                     <img src="images/icons8-x.svg" alt="Follow us on X (Twitter)" width="30" height="30">
                 </a>
                 <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
-                    <img src="images/linkedin-svgrepo-com.svg" alt="Follow us on LinkedIn" width="30" height="30">
+                    <img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn" width="30" height="30">
                 </a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; <span id="currentyear"></span> Port Harcourt Chamber of Commerce | Miracle Peace Peter | WDD 231</p>
+            <p>&copy; <span id="currentyear"></span> Port Harcourt Chamber of Commerce | Miracle Peace Peter | WDD 231
+            </p>
             <p id="lastModified"></p>
         </div>
     </footer>
