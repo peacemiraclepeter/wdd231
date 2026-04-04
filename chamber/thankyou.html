@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Thank you for joining the Port Harcourt Chamber of Commerce. Your application has been received.">
+    <meta name="author" content="Miracle Peace Peter">
+
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Thank You - Port Harcourt Chamber of Commerce">
+    <meta property="og:description" content="Application received confirmation.">
+    <meta property="og:image" content="https://peacemiraclepeter.github.io/wdd231/chamber/images/logo.png">
+    <meta property="og:url" content="https://peacemiraclepeter.github.io/wdd231/chamber/thankyou.html">
+    <meta property="og:type" content="website">
+
+    <title>Thank You | Chamber of Commerce</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.jpg" alt="Chamber of Commerce Logo" class="logo" width="60" height="60">
+            <div class="site-title">
+                <h1>Port Harcourt</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="thank-you-section">
+            <div class="confirmation-icon">✓</div>
+            <h2>Thank You for Your Application!</h2>
+            <p class="confirmation-message">We have received your membership application. Our team will review your
+                information and contact you within 2-3 business days.</p>
+
+            <div class="submission-details">
+                <h3>Application Summary</h3>
+                <div id="form-data" class="form-data">
+                    <!-- Form data will be populated by JavaScript -->
+                    <p class="loading">Loading your information...</p>
+                </div>
+            </div>
+
+            <div class="next-steps">
+                <h3>What Happens Next?</h3>
+                <ul>
+                    <li>📧 You will receive a confirmation email shortly</li>
+                    <li>👥 Our membership team will review your application</li>
+                    <li>📞 We may contact you for additional information</li>
+                    <li>✅ Upon approval, you'll receive your welcome packet</li>
+                </ul>
+            </div>
+
+            <a href="index.html" class="home-btn">Return to Home</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Port Harcourt Chamber of Commerce</p>
+                <p>04 Chief John Amadi Street</p>
+                <p>Port Harcourt, Rivers State 500201</p>
+                <p>Phone: (+234) 810 049 1304</p>
+                <p>Email: petermiraclepeace@gmail.com</p>
+            </div>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="images/facebook.png" alt="Visit our Facebook page" width="30" height="30">
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="images/icons8-x.svg" alt="Follow us on X (Twitter)" width="30" height="30">
+                </a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn" width="30" height="30">
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentyear"></span> Port Harcourt Chamber of Commerce | Miracle Peace Peter | WDD 231
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</body>
+
+</html>
