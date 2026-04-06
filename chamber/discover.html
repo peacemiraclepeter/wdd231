@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover Port Harcourt - Explore attractions, landmarks, and points of interest in the Garden City. Chamber of Commerce area guide.">
+    <meta name="author" content="Miracle Peace Peter">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Discover Port Harcourt | Chamber of Commerce">
+    <meta property="og:description" content="Explore the best attractions and landmarks in Port Harcourt.">
+    <meta property="og:image" content="https://peacemiraclepeter.github.io/wdd231/chamber/images/logo.png">
+    <meta property="og:url" content="https://peacemiraclepeter.github.io/wdd231/chamber/discover.html">
+    <meta property="og:type" content="website">
+
+    <title>Discover | Port Harcourt Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/discover.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.jpg" alt="Chamber of Commerce Logo" class="logo" width="60" height="60">
+            <div class="site-title">
+                <h1>Port Harcourt</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="discover-main">
+        <!-- Visit Message Banner -->
+        <div id="visit-message" class="visit-banner" role="status" aria-live="polite">
+            <!-- Message injected by JavaScript -->
+        </div>
+
+        <!-- Page Header -->
+        <section class="discover-header">
+            <h2>Discover Port Harcourt</h2>
+            <p>Explore the Garden City's finest attractions, landmarks, and hidden gems</p>
+        </section>
+
+        <!-- Demographics Sidebar -->
+        <aside class="demographics">
+            <h3>Area Demographics</h3>
+            <div class="demo-card">
+                <span class="demo-number">3.5M+</span>
+                <span class="demo-label">Population</span>
+            </div>
+            <div class="demo-card">
+                <span class="demo-number">186</span>
+                <span class="demo-label">Year Founded</span>
+            </div>
+            <div class="demo-card">
+                <span class="demo-number">#1</span>
+                <span class="demo-label">Oil & Gas Hub</span>
+            </div>
+            <div class="demo-card">
+                <span class="demo-number">45+</span>
+                <span class="demo-label">Languages</span>
+            </div>
+            <div class="demo-highlight">
+                <p>Port Harcourt is Nigeria's garden city, known for its lush greenery, vibrant culture, and as the
+                    center of the nation's petroleum industry.</p>
+            </div>
+        </aside>
+
+        <!-- Attractions Grid -->
+        <section class="attractions-section">
+            <h3 class="section-title">Local Attractions</h3>
+            <div id="attractions-grid" class="attractions-grid">
+                <!-- Cards injected by JavaScript -->
+                <div class="loading-spinner">Loading attractions...</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Port Harcourt Chamber of Commerce</p>
+                <p>04 Chief John Amadi Street</p>
+                <p>Port Harcourt, Rivers State 500201</p>
+                <p>Phone: (+234) 810 049 1304</p>
+                <p>Email: petermiraclepeace@gmail.com</p>
+            </div>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="images/facebook.png" alt="Facebook" width="30" height="30" loading="lazy">
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="images/icons8-x.svg" alt="Twitter" width="30" height="30" loading="lazy">
+                </a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn" width="30" height="30" loading="lazy">
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentyear"></span> Port Harcourt Chamber of Commerce | Miracle Peace Peter | WDD 231
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
+</body>
+
+</html>
