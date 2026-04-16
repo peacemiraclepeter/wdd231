@@ -271,4 +271,4 @@ function trapFocus(modal) {
         const trigger = document.querySelector(`[data-id="${modal.getAttribute('data-trigger')}"]`);
         if (trigger) trigger.focus();
     });
-}
+}                           

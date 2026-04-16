@@ -1,0 +1,204 @@
+/* ============================================
+   MIRACLE TECH HUB - LARGER SCREEN STYLES
+   Tablet and Desktop (768px and up)
+   ============================================ */
+
+@media screen and (min-width: 768px) {
+
+    /* Typography */
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    /* Header & Navigation */
+    .header-container {
+        padding: var(--spacing-sm) var(--spacing-lg);
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    #primary-nav {
+        position: static;
+        max-height: none;
+        overflow: visible;
+        background: transparent;
+    }
+
+    #primary-nav ul {
+        display: flex;
+        gap: var(--spacing-md);
+        padding: 0;
+    }
+
+    #primary-nav li {
+        margin: 0;
+    }
+
+    #primary-nav a {
+        padding: var(--spacing-xs) var(--spacing-md);
+    }
+
+    /* Main Content */
+    main {
+        padding: var(--spacing-lg);
+    }
+
+    /* Hero Section */
+    .hero {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: var(--spacing-xl);
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: row;
+    }
+
+    /* Events */
+    .events-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Spotlights */
+    .spotlights-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Stats */
+    .stats-section {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .stat-number {
+        font-size: 3rem;
+    }
+
+    /* Directory */
+    .filter-controls {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .filter-group {
+        min-width: 200px;
+    }
+
+    .view-toggle {
+        margin-top: 0;
+    }
+
+    .directory-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .directory-grid.list-view {
+        grid-template-columns: 1fr;
+    }
+
+    /* Join Page - Tiers */
+    .tiers-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tier-card.featured {
+        grid-column: span 2;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    /* Form */
+    .form-row {
+        flex-direction: row;
+    }
+
+    .form-row .form-group {
+        flex: 1;
+    }
+
+    .form-actions {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* Thank You */
+    .thankyou-actions {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* Footer */
+    .footer-container {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+}
+
+/* ============================================
+   DESKTOP STYLES (1024px and up)
+   ============================================ */
+
+@media screen and (min-width: 1024px) {
+
+    /* Hero */
+    .hero-content h2 {
+        font-size: 3rem;
+    }
+
+    /* Events */
+    .events-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Directory */
+    .directory-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .directory-grid.list-view {
+        grid-template-columns: 1fr;
+    }
+
+    /* Join Page - Tiers */
+    .tiers-section {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .tier-card.featured {
+        grid-column: span 1;
+        transform: scale(1.05);
+    }
+
+    /* Modal */
+    .modal {
+        width: 80%;
+        max-width: 700px;
+    }
+}
+
+/* ============================================
+   WIDE DESKTOP (1200px and up)
+   ============================================ */
+
+@media screen and (min-width: 1200px) {
+    .events-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .directory-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

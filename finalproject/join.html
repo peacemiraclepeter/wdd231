@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Miracle Tech Hub - Connecting tech professionals in Port Harcourt, Nigeria. Join our community for events, networking, and growth.">
+    <meta name="author" content="Peace Miracle Peter">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Miracle Tech Hub | Port Harcourt Tech Community">
+    <meta property="og:description"
+        content="Join Port Harcourt's premier tech community. Network, learn, and grow with local tech professionals.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://peacemiraclepeter.github.io/wdd231/final/index.html">
+    <meta property="og:image" content="https://peacemiraclepeter.github.io/wdd231/final/images/og-image.jpg">
+
+    <title>Miracle Tech Hub | Port Harcourt Tech Community</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Miracle Tech Hub Logo" width="50" height="50" loading="lazy">
+                <div class="logo-text">
+                    <h1>Miracle Tech Hub</h1>
+                    <span>Port Harcourt, Nigeria</span>
+                </div>
+            </div>
+            <button id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <nav id="primary-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2>Join Miracle Tech Hub</h2>
+            <p>Choose the membership tier that's right for you or your organization</p>
+        </section>
+
+        <!-- Membership Tiers -->
+        <section class="tiers-section">
+            <div class="tier-card" data-tier="np">
+                <div class="tier-header">
+                    <h3>Non-Profit</h3>
+                    <div class="tier-price">Free</div>
+                </div>
+                <ul class="tier-benefits">
+                    <li>Directory listing</li>
+                    <li>Event notifications</li>
+                    <li>Community forum access</li>
+                    <li>Monthly newsletter</li>
+                </ul>
+                <button class="btn btn-select" data-tier="np">Select</button>
+            </div>
+
+            <div class="tier-card" data-tier="bronze">
+                <div class="tier-header">
+                    <h3>Bronze</h3>
+                    <div class="tier-price">₦10,000<span>/month</span></div>
+                </div>
+                <ul class="tier-benefits">
+                    <li>All Non-Profit benefits</li>
+                    <li>Featured directory placement</li>
+                    <li>Event hosting (1/month)</li>
+                    <li>Job board postings</li>
+                </ul>
+                <button class="btn btn-select" data-tier="bronze">Select</button>
+            </div>
+
+            <div class="tier-card featured" data-tier="silver">
+                <div class="tier-badge">Popular</div>
+                <div class="tier-header">
+                    <h3>Silver</h3>
+                    <div class="tier-price">₦25,000<span>/month</span></div>
+                </div>
+                <ul class="tier-benefits">
+                    <li>All Bronze benefits</li>
+                    <li>Co-working space access</li>
+                    <li>Mentorship program</li>
+                    <li>Training discounts (20%)</li>
+                    <li>Priority event registration</li>
+                </ul>
+                <button class="btn btn-select" data-tier="silver">Select</button>
+            </div>
+
+            <div class="tier-card" data-tier="gold">
+                <div class="tier-header">
+                    <h3>Gold</h3>
+                    <div class="tier-price">₦50,000<span>/month</span></div>
+                </div>
+                <ul class="tier-benefits">
+                    <li>All Silver benefits</li>
+                    <li>Dedicated office space</li>
+                    <li>Investor introductions</li>
+                    <li>Training discounts (50%)</li>
+                    <li>Speaking opportunities</li>
+                    <li>Custom workshops</li>
+                </ul>
+                <button class="btn btn-select" data-tier="gold">Select</button>
+            </div>
+        </section>
+
+        <!-- Application Form -->
+        <section class="form-section">
+            <h2>Membership Application</h2>
+            <form id="join-form" action="thankyou.html" method="get">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name *</label>
+                            <input type="text" id="first-name" name="first-name" required autocomplete="given-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name *</label>
+                            <input type="text" id="last-name" name="last-name" required autocomplete="family-name">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required autocomplete="email"
+                            placeholder="example@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required autocomplete="tel"
+                            placeholder="+234 123 456 7890">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Organization Information</legend>
+
+                    <div class="form-group">
+                        <label for="org-name">Organization/Company Name</label>
+                        <input type="text" id="org-name" name="org-name" autocomplete="organization">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="category">Business Category *</label>
+                            <select id="category" name="category" required>
+                                <option value="" disabled selected>Select a category</option>
+                                <option value="software">Software Development</option>
+                                <option value="hardware">Hardware & IoT</option>
+                                <option value="design">UI/UX Design</option>
+                                <option value="marketing">Digital Marketing</option>
+                                <option value="consulting">Tech Consulting</option>
+                                <option value="education">Tech Education</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="tier">Membership Tier *</label>
+                            <select id="tier" name="tier" required>
+                                <option value="" disabled selected>Select a tier</option>
+                                <option value="np">Non-Profit (Free)</option>
+                                <option value="bronze">Bronze (₦10,000/month)</option>
+                                <option value="silver">Silver (₦25,000/month)</option>
+                                <option value="gold">Gold (₦50,000/month)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Brief Description of Your Business</label>
+                        <textarea id="description" name="description" rows="4"
+                            placeholder="Tell us about your organization..."></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes" checked>
+                        <label for="newsletter">Subscribe to our newsletter</label>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="sms" name="sms" value="yes">
+                        <label for="sms">Receive SMS notifications for events</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Preferred Contact Method</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="contact-method" value="email" checked> Email</label>
+                            <label><input type="radio" name="contact-method" value="phone"> Phone</label>
+                            <label><input type="radio" name="contact-method" value="both"> Both</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary btn-large">Submit Application</button>
+                    <button type="reset" class="btn btn-secondary">Clear Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <div class="footer-logo">
+                <img src="images/logo.jpg" alt="Miracle Tech Hub" width="40" height="40" loading="lazy">
+                <div>
+                    <h3>Miracle Tech Hub</h3>
+                    <p>Port Harcourt, Rivers State, Nigeria</p>
+                </div>
+            </div>
+            <p>&copy; <span id="current-year"></span> Miracle Tech Hub</p>
+            <p>WDD 231 Final Project - Peace Miracle Peter</p>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="attributions.html">Attributions</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h4>Contact</h4>
+            <p>Email: info@miracletechhub.org</p>
+            <p>Phone: +234 123 456 7890</p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="images/facebook.svg" alt="Visit our Facebook page" width="30" height="30">
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="images/twitter.svg" alt="Follow us on X (Twitter)" width="30" height="24">
+                </a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="follow us on LinkedIn" width="30" height="24">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Last Modified: <span id="last-modified"></span></p>
+        <p><a href="https://www.youtube.com/your-video-link" target="_blank">📹 Project Video Demonstration</a></p>
+    </div>
+</footer>
+
+<!-- Modal Template -->
+<dialog id="member-modal" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <div id="modal-body"></div>
+    </div>
+</dialog>
+
+<script type="module" src="scripts/main.js"></script>
+</body>
+
+</html>

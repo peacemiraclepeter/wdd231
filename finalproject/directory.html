@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Miracle Tech Hub - Connecting tech professionals in Port Harcourt, Nigeria. Join our community for events, networking, and growth.">
+    <meta name="author" content="Peace Miracle Peter">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Miracle Tech Hub | Port Harcourt Tech Community">
+    <meta property="og:description"
+        content="Join Port Harcourt's premier tech community. Network, learn, and grow with local tech professionals.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://peacemiraclepeter.github.io/wdd231/final/index.html">
+    <meta property="og:image" content="https://peacemiraclepeter.github.io/wdd231/final/images/og-image.jpg">
+
+    <title>Miracle Tech Hub | Port Harcourt Tech Community</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Miracle Tech Hub Logo" width="50" height="50" loading="lazy">
+                <div class="logo-text">
+                    <h1>Miracle Tech Hub</h1>
+                    <span>Port Harcourt, Nigeria</span>
+                </div>
+            </div>
+            <button id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <nav id="primary-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2>Member Directory</h2>
+            <p>Connect with Port Harcourt's leading tech companies and professionals</p>
+        </section>
+
+        <!-- Filter Controls -->
+        <section class="filter-section">
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="category-filter">Filter by Category:</label>
+                    <select id="category-filter">
+                        <option value="all">All Categories</option>
+                        <option value="software">Software Development</option>
+                        <option value="hardware">Hardware & IoT</option>
+                        <option value="design">UI/UX Design</option>
+                        <option value="marketing">Digital Marketing</option>
+                        <option value="consulting">Tech Consulting</option>
+                        <option value="education">Tech Education</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="tier-filter">Membership Tier:</label>
+                    <select id="tier-filter">
+                        <option value="all">All Tiers</option>
+                        <option value="gold">Gold</option>
+                        <option value="silver">Silver</option>
+                        <option value="bronze">Bronze</option>
+                        <option value="np">Non-Profit</option>
+                    </select>
+                </div>
+                <div class="view-toggle">
+                    <button id="grid-view" class="view-btn active" aria-label="Grid view">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="3" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="14" width="7" height="7"></rect>
+                            <rect x="3" y="14" width="7" height="7"></rect>
+                        </svg>
+                    </button>
+                    <button id="list-view" class="view-btn" aria-label="List view">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="8" y1="6" x2="21" y2="6"></line>
+                            <line x1="8" y1="12" x2="21" y2="12"></line>
+                            <line x1="8" y1="18" x2="21" y2="18"></line>
+                            <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                            <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                            <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="results-count" id="results-count">Showing all members</div>
+        </section>
+
+        <!-- Directory Grid -->
+        <section class="directory-section">
+            <div id="directory-container" class="directory-grid">
+                <!-- Members loaded dynamically -->
+            </div>
+        </section>
+    </main>
+
+   <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <img src="images/logo.jpg" alt="Miracle Tech Hub" width="40" height="40" loading="lazy">
+                    <div>
+                        <h3>Miracle Tech Hub</h3>
+                        <p>Port Harcourt, Rivers State, Nigeria</p>
+                    </div>
+                </div>
+                <p>&copy; <span id="current-year"></span> Miracle Tech Hub</p>
+                <p>WDD 231 Final Project - Peace Miracle Peter</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join Us</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Email: info@miracletechhub.org</p>
+                <p>Phone: +234 123 456 7890</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                        <img src="images/facebook.svg" alt="Visit our Facebook page" width="30" height="30">
+                    </a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                        <img src="images/twitter.svg" alt="Follow us on X (Twitter)" width="30" height="24">
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <img src="images/linkedin.svg" alt="follow us on LinkedIn" width="30" height="24">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Last Modified: <span id="last-modified"></span></p>
+            <p><a href="https://www.youtube.com/your-video-link" target="_blank">📹 Project Video Demonstration</a></p>
+        </div>
+    </footer>
+
+    <!-- Modal Template -->
+    <dialog id="member-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div id="modal-body"></div>
+        </div>
+    </dialog>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Miracle Tech Hub - Connecting tech professionals in Port Harcourt, Nigeria. Join our community for events, networking, and growth.">
+    <meta name="author" content="Peace Miracle Peter">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Miracle Tech Hub | Port Harcourt Tech Community">
+    <meta property="og:description"
+        content="Join Port Harcourt's premier tech community. Network, learn, and grow with local tech professionals.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://peacemiraclepeter.github.io/wdd231/final/index.html">
+    <meta property="og:image" content="https://peacemiraclepeter.github.io/wdd231/final/images/og-image.jpg">
+
+    <title>Miracle Tech Hub | Port Harcourt Tech Community</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Miracle Tech Hub Logo" width="50" height="50" loading="lazy">
+                <div class="logo-text">
+                    <h1>Miracle Tech Hub</h1>
+                    <span>Port Harcourt, Nigeria</span>
+                </div>
+            </div>
+            <button id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <nav id="primary-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Miracle Tech Hub</h2>
+                <p>Connecting tech professionals, fostering innovation, and building the future of Port Harcourt's tech
+                    ecosystem.</p>
+                <div class="hero-buttons">
+                    <a href="join.html" class="btn btn-primary">Join Our Community</a>
+                    <a href="directory.html" class="btn btn-secondary">Explore Directory</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-tech.jpg" alt="Tech professionals collaborating" width="600" height="400"
+                    loading="eager">
+            </div>
+        </section>
+
+        <!-- Current Events Section -->
+        <section class="events-section">
+            <h2>Upcoming Events</h2>
+            <div class="events-container" id="events-container">
+                <!-- Events loaded dynamically via JS -->
+            </div>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather-section">
+            <h2>Port Harcourt Weather</h2>
+            <div class="weather-card" id="weather-card">
+                <div class="weather-loading">Loading weather data...</div>
+            </div>
+        </section>
+
+        <!-- Member Spotlights -->
+        <section class="spotlights-section">
+            <h2>Featured Members</h2>
+            <div class="spotlights-container" id="spotlights-container">
+                <!-- Spotlights loaded dynamically -->
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="stat-item">
+                <span class="stat-number" data-target="500">100+</span>
+                <span class="stat-label">Members</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="50">1000+</span>
+                <span class="stat-label">Companies</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="120">50/2026</span>
+                <span class="stat-label">Events/Year</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="25">400</span>
+                <span class="stat-label">Partners</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <img src="images/logo.jpg" alt="Miracle Tech Hub" width="40" height="40" loading="lazy">
+                    <div>
+                        <h3>Miracle Tech Hub</h3>
+                        <p>Port Harcourt, Rivers State, Nigeria</p>
+                    </div>
+                </div>
+                <p>&copy; <span id="current-year"></span> Miracle Tech Hub</p>
+                <p>WDD 231 Final Project - Peace Miracle Peter</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join Us</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Email: info@miracletechhub.org</p>
+                <p>Phone: +234 123 456 7890</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                        <img src="images/facebook.svg" alt="Visit our Facebook page" width="30" height="30">
+                    </a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                        <img src="images/twitter.svg" alt="Follow us on X (Twitter)" width="30" height="24">
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <img src="images/linkedin.svg" alt="follow us on LinkedIn" width="30" height="24">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Last Modified: <span id="last-modified"></span></p>
+            <p><a href="https://www.youtube.com/your-video-link" target="_blank">📹 Project Video Demonstration</a></p>
+        </div>
+    </footer>
+
+    <!-- Modal Template -->
+    <dialog id="member-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div id="modal-body"></div>
+        </div>
+    </dialog>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+
+</html>

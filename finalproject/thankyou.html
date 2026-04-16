@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you for joining Miracle Tech Hub. Your application has been received.">
+    <meta name="author" content="Peace Miracle Peter">
+
+    <title>Thank You | Miracle Tech Hub</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Miracle Tech Hub Logo" width="50" height="50" loading="lazy">
+                <div class="logo-text">
+                    <h1>Miracle Tech Hub</h1>
+                    <span>Port Harcourt, Nigeria</span>
+                </div>
+            </div>
+            <button id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <nav id="primary-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="thankyou-section">
+            <div class="thankyou-container">
+                <div class="thankyou-icon">✓</div>
+                <h2>Thank You for Joining!</h2>
+                <p>Your membership application has been received. We'll review your information and contact you within 2
+                    business days.</p>
+
+                <div class="submission-details" id="submission-details">
+                    <h3>Application Summary</h3>
+                    <div id="form-data-display">
+                        <!-- Form data populated via JavaScript -->
+                    </div>
+                </div>
+
+                <div class="thankyou-actions">
+                    <a href="index.html" class="btn btn-primary">Return to Home</a>
+                    <a href="directory.html" class="btn btn-secondary">Browse Directory</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <div class="footer-logo">
+                <img src="images/logo.jpg" alt="Miracle Tech Hub" width="40" height="40" loading="lazy">
+                <div>
+                    <h3>Miracle Tech Hub</h3>
+                    <p>Port Harcourt, Rivers State, Nigeria</p>
+                </div>
+            </div>
+            <p>&copy; <span id="current-year"></span> Miracle Tech Hub</p>
+            <p>WDD 231 Final Project - Peace Miracle Peter</p>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="attributions.html">Attributions</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h4>Contact</h4>
+            <p>Email: info@miracletechhub.org</p>
+            <p>Phone: +234 123 456 7890</p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="images/facebook.svg" alt="Visit our Facebook page" width="30" height="30">
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="images/twitter.svg" alt="Follow us on X (Twitter)" width="30" height="24">
+                </a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="follow us on LinkedIn" width="30" height="24">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Last Modified: <span id="last-modified"></span></p>
+        <p><a href="https://www.youtube.com/your-video-link" target="_blank">📹 Project Video Demonstration</a></p>
+    </div>
+</footer>
+
+<!-- Modal Template -->
+<dialog id="member-modal" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <div id="modal-body"></div>
+    </div>
+</dialog>
+
+<script type="module" src="scripts/main.js"></script>
+</body>
+
+</html>
