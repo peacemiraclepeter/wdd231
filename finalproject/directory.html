@@ -1,39 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Miracle Tech Hub - Connecting tech professionals in Port Harcourt, Nigeria. Join our community for events, networking, and growth.">
+    <meta name="description" content="Browse our directory of tech companies and professionals in Port Harcourt. Find partners, collaborators, and service providers.">
     <meta name="author" content="Peace Miracle Peter">
-
-    <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Miracle Tech Hub | Port Harcourt Tech Community">
-    <meta property="og:description"
-        content="Join Port Harcourt's premier tech community. Network, learn, and grow with local tech professionals.">
+    
+    <meta property="og:title" content="Member Directory | Miracle Tech Hub">
+    <meta property="og:description" content="Discover tech companies and professionals in Port Harcourt.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://peacemiraclepeter.github.io/wdd231/final/index.html">
-    <meta property="og:image" content="https://peacemiraclepeter.github.io/wdd231/final/images/og-image.jpg">
-
-    <title>Miracle Tech Hub | Port Harcourt Tech Community</title>
-
-    <!-- Favicon -->
+    
+    <title>Member Directory | Miracle Tech Hub</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
-
-    <!-- Google Fonts -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
-        rel="stylesheet">
-
-    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 </head>
-
 <body>
     <header>
         <div class="header-container">
@@ -49,8 +36,8 @@
             </button>
             <nav id="primary-nav">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html" class="active">Directory</a></li>
                     <li><a href="join.html">Join</a></li>
                 </ul>
             </nav>
@@ -90,8 +77,7 @@
                 </div>
                 <div class="view-toggle">
                     <button id="grid-view" class="view-btn active" aria-label="Grid view">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <rect x="3" y="3" width="7" height="7"></rect>
                             <rect x="14" y="3" width="7" height="7"></rect>
                             <rect x="14" y="14" width="7" height="7"></rect>
@@ -99,8 +85,7 @@
                         </svg>
                     </button>
                     <button id="list-view" class="view-btn" aria-label="List view">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <line x1="8" y1="6" x2="21" y2="6"></line>
                             <line x1="8" y1="12" x2="21" y2="12"></line>
                             <line x1="8" y1="18" x2="21" y2="18"></line>
@@ -122,7 +107,7 @@
         </section>
     </main>
 
-   <footer>
+    <footer>
         <div class="footer-container">
             <div class="footer-info">
                 <div class="footer-logo">
@@ -167,7 +152,7 @@
         </div>
     </footer>
 
-    <!-- Modal Template -->
+    <!-- Member Detail Modal -->
     <dialog id="member-modal" class="modal">
         <div class="modal-content">
             <button class="modal-close" aria-label="Close modal">&times;</button>
@@ -175,7 +160,6 @@
         </div>
     </dialog>
 
-    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/directory.js"></script>
 </body>
-
 </html>
